@@ -5,7 +5,7 @@ class BrowserHistory:
 
     def visit(self, url: str) -> None:
         self.backk.append(url)
-        self.forwardd = []
+        self.forwardd.clear()
         
     def back(self, steps: int) -> str:
         while steps >0 and len(self.backk)>1:
